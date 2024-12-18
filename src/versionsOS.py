@@ -174,11 +174,9 @@ def get_os_release_year(os_name, version=None):
         first_digit = version
 
     if os_name == 'chrome os':
-        result = 2019
+        result = 2011
     elif os_name == 'chromecast':
         result = 2015
-    elif os_name == 'chrome os':
-        result = 2011
     elif os_name in os_data:
         if first_digit in os_data[os_name]:
             result = os_data[os_name][first_digit]
