@@ -184,3 +184,18 @@ geo_info.csv: - «geo_id» - id geo (см. п.2); - «country_id» - id стра
  - user_agent_os_version        (из парсинга файла train.csv или test.csv )
 
 Далее повестовование переезжает в ipynb посвящённый созданию правильного файла
+
+
+## Рекомендуемый порядок ознакомления с файлами
+
+1. PreparingData1.ipynb
+2. TrainingData.ipynb
+3. TrainingData2.ipynb
+4. TrainDataCatBoost.ipynb
+5. versionsBrowser.py
+6. versionsOS.py
+7. AddingYearsToData.ipynb
+8. TrainDataCatBoost2.ipynb
+
+## Краткий вывод
+Удалось достичь f1 score равный 0.81, что считается приемлимым. Успешно сгенерирован test_labels.csv. Опробованы разные методы начиная от логистической регрессии, неполучившегося случайного леса, заканчивая CatBoost. Применены обширные манипуляции с интерпритацией данных с переменными успехами.
